@@ -4,10 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:id="@+id/screen"
+
+    tools:ignore="InvalidId">
+
 
     <LinearLayout
         android:layout_width="match_parent"
+        android:id="@+id/vert"
         android:layout_height="match_parent"
         android:orientation="horizontal"
         tools:layout_editor_absoluteX="1dp"
@@ -20,7 +25,8 @@
             android:layout_weight="1"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="" />
+            android:minHeight="48dp"
+            android:text="text" />
 
         <TextView
             android:id="@+id/textView"
@@ -28,6 +34,13 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="0" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Button" />
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
